@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import payroll.Employee;
 import payroll.PaymentClassification;
+import payroll.PaymentMethod;
 import payroll.PayrollDatabase;
 import payroll.Transaction;
 import payroll.classification.HourlyClassification;
