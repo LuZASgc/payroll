@@ -4,7 +4,7 @@ public class Employee {
 	private int empId;
 	private String name;
 	private String address;
-	
+	private PaymentClassification paymentClassification; 
 	
 	public int getEmpId() {
 		return empId;
@@ -33,5 +33,6 @@ public class Employee {
 	public Employee() {
 		// TODO Auto-generated constructor stub
 	}
+	
 	
 }
