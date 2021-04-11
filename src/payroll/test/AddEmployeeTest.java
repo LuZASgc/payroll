@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 import payroll.Employee;
+import payroll.PaymentClassification;
 import payroll.PayrollDatabase;
 import payroll.Transaction;
 import payroll.trans.AddHourlyEmployeeTransaction;
