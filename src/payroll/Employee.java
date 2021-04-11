@@ -4,7 +4,8 @@ public class Employee {
 	private int empId;
 	private String name;
 	private String address;
-	private PaymentClassification paymentClassification; 
+	private PaymentClassification paymentClassification;
+	private PaymentMethod paymentMethod;
 	
 	public int getEmpId() {
 		return empId;
@@ -39,6 +40,7 @@ public class Employee {
 	public void setPaymentClassification(PaymentClassification paymentClassification) {
 		this.paymentClassification = paymentClassification;
 	}
+	
 	
 	
 }
