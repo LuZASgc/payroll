@@ -8,6 +8,7 @@ import payroll.Employee;
 import payroll.PaymentClassification;
 import payroll.PayrollDatabase;
 import payroll.Transaction;
+import payroll.classification.HourlyClassification;
 import payroll.trans.AddHourlyEmployeeTransaction;
 
 public class AddEmployeeTest {
