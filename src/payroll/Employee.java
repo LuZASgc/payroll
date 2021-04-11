@@ -4,6 +4,8 @@ public class Employee {
 	private int empId;
 	private String name;
 	private String address;
+	
+	
 	public int getEmpId() {
 		return empId;
 	}
@@ -28,6 +30,8 @@ public class Employee {
 		this.name = name;
 		this.address = address;
 	}
-	
+	public Employee() {
+		// TODO Auto-generated constructor stub
+	}
 	
 }
