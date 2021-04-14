@@ -38,5 +38,26 @@ public class AddEmployeeTest {
 		PaymentMethod pm = e.getPaymentMethod();
 		assertTrue(pm instanceof HoldMethod); // 支付方式默认为保存支票
 	}
+	
+	public void testAddSalariedEmployee() {
+		int empId = 1002;
+		String name = "Bill";
+		String address = "Home";
+		double salary = 2410.0;
+		
+		Transaction t = new AddSalariedEmployeeTransaction(empId, name, address, salary);
+		t.execute();
+		
+		Employee e = PayrollDatabase.getEmployee(empId);
+		assertNotNull(e);
+		assertEquals(name, e.getName());
+		assertEquals(address, e.getAddress());
+		PaymentClassification pc = e.getPaymentClassification();
+		assertTrue(pc instanceof SalariedClassification); // 月薪方式
+		SalariedClassification sc = (SalariedClassification) pc;
+		assertEquals(salary, sc.getSalary(), 0.01); // 月薪正确
+		PaymentMethod pm = e.getPaymentMethod();
+		assertTrue(pm instanceof HoldMethod);
+	}
 
 }
