@@ -12,6 +12,7 @@ import payroll.Transaction;
 import payroll.classification.HourlyClassification;
 import payroll.method.HoldMethod;
 import payroll.trans.AddHourlyEmployeeTransaction;
+import payroll.trans.AddSalariedEmployeeTransaction;
 
 public class AddEmployeeTest {
 
