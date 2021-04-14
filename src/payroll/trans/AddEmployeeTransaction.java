@@ -8,9 +8,9 @@ import payroll.method.HoldMethod;
 
 public abstract class AddEmployeeTransaction implements Transaction {
 
-	protected int empId;
-	protected String name;
-	protected String address;
+	private int empId;
+	private String name;
+	private String address;
 	
 	public AddEmployeeTransaction(int empId, String name, String address) {
 		super();

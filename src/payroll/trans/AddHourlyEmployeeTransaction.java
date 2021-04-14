@@ -8,13 +8,15 @@ public class AddHourlyEmployeeTransaction extends AddEmployeeTransaction impleme
 
 	private double hourlyRate;
 
-	public AddHourlyEmployeeTransaction(int empId, String name, String address, double hourlyRate) {
-		this.empId = empId;
-		this.name = name;
-		this.address = address;
-		this.hourlyRate = hourlyRate;
+	public AddHourlyEmployeeTransaction(int empId, String name, String address, 
+			double hourlyRate) {
+		
+				
+				super(empId,name,address);
+				this.hourlyRate = hourlyRate;
 	}
-
+	
+	@Override
 	protected PaymentClassification getPaymentClassification() {
 		return new HourlyClassification(hourlyRate);
 	}
