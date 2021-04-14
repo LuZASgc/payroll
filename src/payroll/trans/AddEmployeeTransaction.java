@@ -6,15 +6,19 @@ import payroll.PayrollDatabase;
 import payroll.Transaction;
 import payroll.method.HoldMethod;
 
-public abstract class AddEmployeeTransaction {
+public abstract class AddEmployeeTransaction implements Transaction {
 
 	protected int empId;
-
-	protected abstract PaymentClassification getPaymentClassification();
-
 	protected String name;
 	protected String address;
-
+	
+	public AddEmployeeTransaction(int empId, String name, String address) {
+		super();
+		this.empId = empId;
+		this.name = name;
+		this.address = address;
+	}
+	
 	public AddEmployeeTransaction() {
 		super();
 	}
@@ -26,5 +30,6 @@ public abstract class AddEmployeeTransaction {
 		employee.setPaymentMethod(new HoldMethod());
 		PayrollDatabase.save(employee);
 	}
+	protected abstract PaymentClassification getPaymentClassification();
 
 }
