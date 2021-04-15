@@ -9,6 +9,7 @@ import payroll.PaymentClassification;
 import payroll.PaymentMethod;
 import payroll.PayrollDatabase;
 import payroll.Transaction;
+import payroll.classification.CommissionedClassification;
 import payroll.classification.HourlyClassification;
 import payroll.classification.SalariedClassification;
 import payroll.method.HoldMethod;
