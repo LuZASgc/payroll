@@ -4,8 +4,11 @@ import payroll.Transaction;
 
 public class DeleteEmployeeTransaction implements Transaction {
 
+	private int empId;
+
 	public DeleteEmployeeTransaction(int empId) {
-		// TODO Auto-generated constructor stub
+		this.empId = empId;
+		
 	}
 
 	@Override
