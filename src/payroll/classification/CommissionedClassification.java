@@ -9,4 +9,9 @@ public class CommissionedClassification extends PaymentClassification {
 		return 0;
 	}
 
+	public double getCommissionRate() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }
